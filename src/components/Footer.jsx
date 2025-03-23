@@ -1,5 +1,7 @@
 export const Footer = () => {
     return (
-        <div>Footer</div>
+        <Footer>
+            2030 Router1
+        </Footer>
     )
 }
