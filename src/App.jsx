@@ -9,11 +9,10 @@ import { Admin } from "./components/Admin";
 import './App.css';
 
 function App() {
-  const user = true;
+  const user = false;
   return (
     <div className="App">
       <Header />
-      <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="products" element={<ProductList />} />
@@ -21,7 +20,6 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="/admin" element={ user ? <Admin /> : <Navigate to="/" />} />
       </Routes>
-      </main>
       <Footer />
     </div>
   )
