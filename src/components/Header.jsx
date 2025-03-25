@@ -1,16 +1,17 @@
+import { Link, NavLink } from "react-router";
 import Logo from "../assets/logo.png";
 
 export const Header = () => {
     return (
         <header>
-            <a href="/" className="logo">
-                <img src={Logo} alt="Router1 Logo" />
-                <span>Router1</span>
-            </a>
+            <Link to="/" className="logo">
+                <img src={Logo} alt="Router App Logo" />
+                <span>Router App</span>
+            </Link>
             <nav className="navigation">
-                <a href="/" className="link">Home</a>
-                <a href="/products" className="link">Products</a>
-                <a href="/contact" className="link">Contact</a>
+                <NavLink to="/" className="link" end>Home</NavLink>
+                <NavLink to="/products" className="link">Products</NavLink>
+                <NavLink to="/contact" className="link">Contact</NavLink>
             </nav>
         </header>
     )
