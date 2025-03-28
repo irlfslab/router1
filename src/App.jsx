@@ -20,7 +20,7 @@ function App() {
         <Route path="products/:id" element={<ProductDetail />} />
         <Route path="contact" element={<Contact />} />
         <Route path="/admin" element={ user ? <Admin /> : <PageNotFound />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<PageNotFound title="404" />} />
       </Routes>
       <Footer />
     </div>
