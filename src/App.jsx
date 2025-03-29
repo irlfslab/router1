@@ -25,6 +25,7 @@ function App() {
           <Route path="in" element={<ContactIn />} /> 
           <Route path="eu" element={<ContactEu />} /> 
           <Route path="us" element={<ContactUs />} /> 
+          <Route path="*" element={<ContactUs />} /> 
         </Route>
         <Route path="/admin" element={ user ? <Admin /> : <PageNotFound />} />
         <Route path="*" element={<PageNotFound title="404"/>} />
